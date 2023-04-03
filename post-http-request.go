@@ -15,7 +15,7 @@ func main() {
 	min := 1
 	max := 100
 
-	for range time.Tick(time.Minute * 15) {
+	for range time.Tick(time.Second * 15) {
 
 		data := map[string]interface{}{
 			"water": rand.Intn(max-min) + min,
